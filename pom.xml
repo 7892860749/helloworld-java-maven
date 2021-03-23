@@ -28,6 +28,10 @@
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-javadoc-plugin</artifactId>
+			 <configuration>
+				 <additionalparam>-Xdoclint:none</additionalparam>
+         <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+    </configuration>
 			<executions>
 				<execution>
 					<id>attach-javadocs</id>
